@@ -72,14 +72,14 @@
 		var menuF = document.querySelector('nav.menu');
 		var item = function(o){
 			var div = document.createElement('div');
-			div.style.backgroundImage = 'url(/images/icons/' + o.icono_comite + ')';
+			div.style.backgroundImage = 'url(images/icons/' + o.icono_comite + ')';
 			div.setAttribute('cod_comite', o.cod_comite);
 			var span = document.createElement('span');
 			span.innerHTML = o.nombre_comite;
 			div.appendChild(span);
 			div.onclick = function(){ 
 				if (o.cod_comite > 0){
-					window.location.href = o.url_comite ? '/contenido?url=' + encodeURIComponent(o.url_comite) + '&cod=' + o.cod_comite : '/principal?cod=' + o.cod_comite; 
+					window.location.href = o.url_comite ? 'contenido.html?url=' + encodeURIComponent(o.url_comite) + '&cod=' + o.cod_comite : 'principal.html?cod=' + o.cod_comite; 
 				}
 				else{
 					o.onclick.call(this);
@@ -90,7 +90,7 @@
 		var itemF = function(o){
 			var a = document.createElement('a');
 			if (o.cod_comite > 0){
-				a.href = o.url_comite ? '/contenido?url=' + encodeURIComponent(o.url_comite) + '&cod=' + o.cod_comite : '/principal?cod=' + o.cod_comite; 
+				a.href = o.url_comite ? 'contenido.html?url=' + encodeURIComponent(o.url_comite) + '&cod=' + o.cod_comite : 'principal.html?cod=' + o.cod_comite; 
 			}
 			else{
 				a.href = '#';

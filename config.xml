@@ -1,0 +1,13 @@
+ <widget id="com.example.hello" version="0.0.1">
+    <name>M-COMMITTEE-UEB</name>
+    <description>
+        Aplicacion para la facultad de ingenieria de la universidad el bosque
+    </description>
+    <author email="cediazv@unbosque.edu.co" href="http://uelbosque.edu.co">
+        Universidad El Bosque
+    </author>
+    <plugin name="cordova-plugin-whitelist" spec="1.3.2" />
+    <access origin="*" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
+</widget>

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
 <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Express</title>
-<link rel="stylesheet" href="/stylesheets/font.css">
-<link rel="stylesheet" href="/stylesheets/layout.css">
-<link rel="stylesheet" href="/stylesheets/index.css">
-<script src="/javascripts/utils.js"></script>
-<script src="/javascripts/menu.js"></script>
-<script src="/javascripts/index.js"></script>
+<link rel="stylesheet" href="stylesheets/font.css">
+<link rel="stylesheet" href="stylesheets/layout.css">
+<link rel="stylesheet" href="stylesheets/index.css">
+<script src="javascripts/utils.js"></script>
+<script src="javascripts/menu.js"></script>
+<script src="javascripts/index.js"></script>
 </head>
 <body>
 	<aside class="close"></aside>
@@ -24,15 +26,15 @@
 			<aside class="btn-menu">
 				<button></button>
 			</aside>
-			<div onclick="window.location.href = '/';" class="logo-u"></div>
+			<div onclick="window.location.href = 'index.html';" class="logo-u"></div>
 			<section class="bread-crumb"></section>
 		</section>
 		<section class="scd-part"></section>
 	</header>
 	<aside class="menu-container">
 		<nav class="menu-ppal">
-			<div style="background-image: url('/images/icons/home.svg');background-size: 36px;background-position: 7px center;">
-				<span onclick="window.location.href = '/';">Inicio</span>
+			<div style="background-image: url('images/icons/home.svg');background-size: 36px;background-position: 7px center;">
+				<span onclick="window.location.href = 'index.html';">Inicio</span>
 			</div>
 		</nav>
 	</aside>
@@ -50,7 +52,7 @@
 	</section>
 	<footer>
 		<section class="info-u">
-			<img src="/images/logo.png">
+			<img src="images/logo.png">
 			<span>Edificio Fundadores Av. Cra 9 No. 131 A - 02</span>
 			<span>Línea Gratuita 018000 113033</span>
 			<span>PBX (571) 6489000</span>

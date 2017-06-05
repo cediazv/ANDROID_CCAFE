@@ -13,13 +13,13 @@
             if (http.readyState == 4) {
                 if (http.status == 200) {
                 	var data = JSON.parse(http.responseText).data;
-                	document.getElementById('img').src = '/images/banners/' + data.banner_comite;
+                	document.getElementById('img').src = 'images/banners/' + data.banner_comite;
                 	document.getElementById('nombre').innerHTML = data.nombre_comite;
                 	//document.getElementById('fecha').innerHTML = data.f_creacion_comite;
 
                     document.title = data.nombre_comite + ' - Facultad de Ingeniería - Universidad El Bosque';
 
-                    window['breadCrumb'].addItem(data.nombre_comite, '/principal?cod=' + data.cod_comite);
+                    window['breadCrumb'].addItem(data.nombre_comite, 'principal.html?cod=' + data.cod_comite);
 
                     var contenedor = document.getElementById('contenido-inicial');
 
@@ -93,7 +93,7 @@
                         var lnk = document.createElement('li');
                         var a = document.createElement('a');
                         a.innerHTML = e.nombre_menu;
-                        a.href = e.url_menu ? '/contenido?url=' + encodeURIComponent(e.url_menu) + '&cod=' + codigo : '/principal?cod=' + codigo + '&men=' + e.cod_menu;
+                        a.href = e.url_menu ? 'contenido.html?url=' + encodeURIComponent(e.url_menu) + '&cod=' + codigo : 'principal.html?cod=' + codigo + '&men=' + e.cod_menu;
 
                         /*AddEvent(lnk, 'click', function(){
                             window.lovation.href = this.url;
