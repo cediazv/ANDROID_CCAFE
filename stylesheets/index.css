@@ -1,0 +1,134 @@
+.content{
+	display: block !important;
+	position: relative;
+	flex: inherit !important;
+	/*height:  100%;*/
+}
+
+section#carousel{
+	height: 50%;
+	width:  100%;
+	min-height: 330px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+    align-items: center;
+    /*-ms-flex-pack: justify;
+    justify-content: space-between;*/
+
+    background-image: url(http://www.uelbosque.edu.co/sites/default/files/talento_humano/imagenes/cabezote_trabajar_talento_humano.jpg);
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section#carousel > div{
+	color: #FFF;
+	width: 70%;
+}
+
+section#carousel > div > span{
+	font-size: 6em;
+}
+
+section#carousel > div > a{
+    color: #fff;
+    background-color: #af2bac;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+section#carousel > div > a:hover{
+    background-color: #982195;
+}
+
+section#carousel > aside{
+	width: 15%;
+	cursor: pointer;
+	font-size: 5em;
+    color: #CCC;
+    text-align: center;
+}
+
+section#carousel > aside:hover{
+	color: #999;
+}
+
+section#carousel > aside#left{
+	float: left;
+}
+
+section#carousel > aside#right{
+	float: right;
+}
+
+section#squares{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: row;
+	flex-flow: row wrap;
+	-ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	/*height: 50%;*/
+}
+
+section#squares > div{
+	width: 30%;
+	height: 33%;
+    min-height: 150px;
+	margin: 5px;
+	position: relative;
+
+	background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+section#squares > div:nth-of-type(odd){
+	background-image: url(http://cr00.epimg.net/radio/imagenes/2016/07/06/nacional/1467762063_442251_1467762222_noticia_normal.jpg);
+}
+
+section#squares > div:nth-of-type(even){
+	background-image: url(https://c1.staticflickr.com/9/8478/8267914018_86abd5df09_c.jpg);
+}
+
+section#squares > div > div{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	padding:  5px;
+	border-top:  4px solid #CCC;
+	background-color: rgba(204, 204, 204, 0.7);
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px){
+	section#carousel > div > span{
+		font-size: 4em;
+	}
+	section#carousel > div > a,
+	section#squares > div > div{
+	    font-size: .8em;
+	}
+}
+
+@media (max-width: 480px){
+	section#carousel > div > span{
+		font-size: 2em;
+	}
+	section#carousel > div > a,
+	section#squares > div > div{
+	    font-size: .6em;
+	}
+}

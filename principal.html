@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Express</title>
+<link rel="stylesheet" href="/stylesheets/font.css">
+<link rel="stylesheet" href="/stylesheets/layout.css">
+<link rel="stylesheet" href="/stylesheets/principal.css">
+<script src="/javascripts/utils.js"></script>
+<script src="/javascripts/menu.js"></script>
+<script src="/javascripts/index.js"></script>
+<script src="/javascripts/principal.js"></script>
+</head>
+<body>
+	<aside class="close"></aside>
+	<aside class="search-container">
+		<div>
+			<input type="text" placeholder="Ingrese su búsqueda...">
+			<div class="btn-search"></div>
+		</div>
+	</aside>
+	<header class="head">
+		<section class="fst-part">
+			<aside class="btn-menu">
+				<button></button>
+			</aside>
+			<div onclick="window.location.href = '/';" class="logo-u"></div>
+			<section class="bread-crumb"></section>
+		</section>
+		<section class="scd-part"></section>
+	</header>
+	<aside class="menu-container">
+		<nav class="menu-ppal">
+			<div style="background-image: url('/images/icons/home.svg');background-size: 36px;background-position: 7px center;">
+				<span onclick="window.location.href = '/';">Inicio</span>
+			</div>
+		</nav>
+	</aside>
+	<section class="content">
+		<header>
+			<nav id="menu-interno">
+				<ul></ul>
+			</nav>
+			<img id="img" width="100%">
+			<div id="nombre"></div>
+		</header>
+		<section id="contenido-inicial"></section>
+	</section>
+	<footer>
+		<section class="info-u">
+			<img src="/images/logo.png">
+			<span>Edificio Fundadores Av. Cra 9 No. 131 A - 02</span>
+			<span>Línea Gratuita 018000 113033</span>
+			<span>PBX (571) 6489000</span>
+		</section>
+		<section class="menu-dir">
+			<nav class="menu">
+				<a href="/">Inicio</a>
+			</nav>
+		</section>
+	</footer>
+	<aside class="modal-background oculto"></aside>
+	<aside class="modal-content oculto">
+		<section class="modal-title">
+			<span class="modal-title-text">Ingreso</span>
+			<button type="button" class="modal-close">X</button>
+		</section>
+		<section class="modal-body">
+			<input type="text" placeholder="Usuario">
+			<input type="password" placeholder="Contraseña">
+			<button type="button" id="ingresar">Ingresar</button>
+		</section>
+	</aside>
+</body>
+</html>
